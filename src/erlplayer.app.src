@@ -1,0 +1,13 @@
+{application, erlplayer, [
+	{description, "ErlPlayer powered by Mplayer and Ranch."},
+	{vsn, "1"},
+	{modules, []},
+	{registered, []},
+	{applications, [
+		kernel,
+		stdlib,
+		ranch
+	]},
+	{mod, {erlplayer_app, []}},
+	{env, []}
+]}.
