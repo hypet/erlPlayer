@@ -1,7 +1,7 @@
 erlPlayer
 =========
 
-ErlPlayer is media player server based on MPlayer and powered by Erlang.
+ErlPlayer is a remote media player server based on MPlayer and powered by Erlang. It may handle connections from different devices (Android erlPlayer client, for instance) and 
 ErlPlayer uses Ranch to manage TCP connections.
 
 How to use
@@ -10,7 +10,8 @@ How to use
 * Install Erlang. You may get it here: http://www.erlang.org/download.html
 * Get MPlayer here: http://www.mplayerhq.hu/design7/dload.html
 * Git clone this project.
-* Edit sys.config: change the path to your music folder and the path to mplayer binary (if it is on your PATH then leave only binary name, e.g. <pre>{mplayer_path, "mplayer.exe"}</pre>).
+* Give ./rebar executable permissions (in case if you have *nix like OS).
+* Edit sys.config: change the path to your music folder and the path to mplayer binary (if it is on your PATH then leave only binary name, e.g. <pre>{mplayer_path, "mplayer.exe"}</pre>
 * Run: 
 <pre>
 make all
